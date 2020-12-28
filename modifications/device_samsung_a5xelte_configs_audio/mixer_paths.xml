@@ -2335,17 +2335,17 @@
 
 	<!-- camcorder input volume -->
 	<path name="gain-camcorder-mic-oe">
-		<ctl name="MIC1 Volume" value="24" />
-		<ctl name="MIC1 Boost Volume" value="1" />
-		<ctl name="ADC Left Gain" value="137" />
-		<ctl name="ADC Right Gain" value="137" />
+		<ctl name="MIC1 Volume" value="28" />
+		<ctl name="MIC1 Boost Volume" value="2" />
+		<ctl name="ADC Left Gain" value="140" />
+		<ctl name="ADC Right Gain" value="140" />
 	</path>
 
 	<path name="gain-camcorder-headset-mic">
-		<ctl name="MIC2 Volume" value="8" />
-		<ctl name="MIC2 Boost Volume" value="2" />
-		<ctl name="ADC Left Gain" value="137" />
-		<ctl name="ADC Right Gain" value="137" />
+		<ctl name="MIC2 Volume" value="12" />
+		<ctl name="MIC2 Boost Volume" value="4" />
+		<ctl name="ADC Left Gain" value="140" />
+		<ctl name="ADC Right Gain" value="140" />
 	</path>
 
 	<path name="gain-camcorder-headphone-mic">
