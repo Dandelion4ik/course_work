@@ -2309,10 +2309,10 @@
 	<!-- Input stage volume -->
 	<!-- media input volume -->
 	<path name="gain-media-mic">
-		<ctl name="MIC1 Volume" value="11" />
-		<ctl name="MIC1 Boost Volume" value="2" />
-		<ctl name="ADC Left Gain" value="150" />
-		<ctl name="ADC Right Gain" value="150" />
+		<ctl name="MIC1 Volume" value="14" />
+		<ctl name="MIC1 Boost Volume" value="4" />
+		<ctl name="ADC Left Gain" value="160" />
+		<ctl name="ADC Right Gain" value="160" />
 	</path>
 
 	<path name="gain-media-headset-mic">
