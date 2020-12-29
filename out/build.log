@@ -1,0 +1,758 @@
+andrey@andrey-System-Product-Name:~/lineage$ croot
+andrey@andrey-System-Product-Name:~/lineage$ brunch a5xelte
+Looking for dependencies in device/samsung/a5xelte
+Looking for dependencies in device/samsung/universal7580-common
+Looking for dependencies in hardware/samsung
+hardware/samsung has no additional dependencies.
+Looking for dependencies in hardware/samsung_slsi/exynos
+hardware/samsung_slsi/exynos has no additional dependencies.
+Looking for dependencies in hardware/samsung_slsi/exynos5
+hardware/samsung_slsi/exynos5 has no additional dependencies.
+Looking for dependencies in hardware/samsung_slsi/exynos7580
+hardware/samsung_slsi/exynos7580 has no additional dependencies.
+Looking for dependencies in hardware/samsung_slsi/openmax
+hardware/samsung_slsi/openmax has no additional dependencies.
+Looking for dependencies in kernel/samsung/universal7580
+kernel/samsung/universal7580 has no additional dependencies.
+Looking for dependencies in packages/resources/devicesettings
+packages/resources/devicesettings has no additional dependencies.
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=10
+LINEAGE_VERSION=17.1-20201228-UNOFFICIAL-a5xelte
+TARGET_PRODUCT=lineage_a5xelte
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-58-generic-x86_64-Ubuntu-20.04.1-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=QQ3A.200805.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/samsung/a5xelte device/samsung/universal7580-common
+============================================
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=10
+LINEAGE_VERSION=17.1-20201228-UNOFFICIAL-a5xelte
+TARGET_PRODUCT=lineage_a5xelte
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.4.0-58-generic-x86_64-Ubuntu-20.04.1-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=QQ3A.200805.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/samsung/a5xelte device/samsung/universal7580-com
+mon
+============================================
+[  7% 844/10961] Building Kernel Config
+make: Entering directory '/home/andrey/lineage/kernel/samsung/universal7580'
+  GEN     /home/andrey/lineage/out/target/product/a5xelte/obj/KERNEL_OBJ/Makefil
+e
+#
+# configuration written to .config
+#
+make: Leaving directory '/home/andrey/lineage/kernel/samsung/universal7580'
+make: Entering directory '/home/andrey/lineage/kernel/samsung/universal7580'
+  GEN     /home/andrey/lineage/out/target/product/a5xelte/obj/KERNEL_OBJ/Makefil
+e
+scripts/kconfig/conf --savedefconfig=defconfig Kconfig
+make: Leaving directory '/home/andrey/lineage/kernel/samsung/universal7580'
+[ 11% 1280/10961] Building Kernel Image (Image)
+make: Entering directory '/home/andrey/lineage/kernel/samsung/universal7580'
+  GEN     /home/andrey/lineage/out/target/product/a5xelte/obj/KERNEL_OBJ/Makefil
+e
+scripts/kconfig/conf --silentoldconfig Kconfig
+INFO: CC is /home/andrey/lineage/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-a
+ndroid-4.9/bin/aarch64-linux-android-gcc
+  GEN     /home/andrey/lineage/out/target/product/a5xelte/obj/KERNEL_OBJ/Makefil
+e
+  CHK     include/generated/uapi/linux/version.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  Using /home/andrey/lineage/kernel/samsung/universal7580 as source for kernel
+  CHK     include/generated/utsrelease.h
+  HOSTLD  scripts/mod/modpost
+make[2]: Nothing to be done for 'dtbs'.
+  CALL    /home/andrey/lineage/kernel/samsung/universal7580/scripts/checksyscall
+s.sh
+  CHK     include/generated/compile.h
+make[2]: 'arch/arm64/boot/Image' is up to date.
+make: Leaving directory '/home/andrey/lineage/kernel/samsung/universal7580'
+Building DTBs
+make: Entering directory '/home/andrey/lineage/kernel/samsung/universal7580'
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTLD  scripts/mod/modpost
+make[2]: Nothing to be done for 'dtbs'.
+make: Leaving directory '/home/andrey/lineage/kernel/samsung/universal7580'
+[ 11% 1293/10961] Target dt image: out/target/product/a5xelte/dt.img
+Made DT image: out/target/product/a5xelte/dt.img
+[ 28% 3002/10539] R8: out/target/common/obj/APPS/Shell_intermediates/dex/classes
+Warning: Library class android.os.BugreportManager$DumpstateListener extends pro
+gram class android.os.IDumpstateListener$Stub
+Warning: Library class android.os.BugreportManager$DumpstateListener extends pro
+gram class android.os.IDumpstateListener$Stub
+[ 33% 3465/10479] Target boot image: out/target/product/a5xelte/boot.img
+patch boot out/target/product/a5xelte/boot.img out/target/product/a5xelte/boot.i
+mg.lok
+cp: bad 'out/target/product/a5xelte/boot.img.lok': No such file or directory
+Made boot image: out/target/product/a5xelte/boot.img
+[ 79% 8325/10470] Target Java: out/target/common/obj/APPS/Dialer_intermediates/c
+Note: Generating a Provider for com.android.dialer.glidephotomanager.impl.GlideP
+hotoManagerImpl. Prefer to run the dagger processor over that class instead.
+Note: [1] Wrote GeneratedAppGlideModule with: []
+[ 80% 8382/10470] ----- Making recovery image ------
+patch recovery out/target/product/a5xelte/recovery.img out/target/product/a5xelt
+e/recovery.img.lok
+cp: bad 'out/target/product/a5xelte/recovery.img.lok': No such file or directory
+Made recovery image: out/target/product/a5xelte/recovery.img
+[ 80% 8424/10470] R8: out/target/common/obj/APPS/Snap_intermediates/dex/classes.
+Warning: Library class androidx.core.graphics.drawable.IconCompat extends progra
+m class androidx.versionedparcelable.CustomVersionedParcelable
+Warning: Library class androidx.core.app.RemoteActionCompat implements program c
+lass androidx.versionedparcelable.VersionedParcelable
+Warning: Library class androidx.core.app.NotificationCompatSideChannelService$No
+tificationSideChannelStub extends program class android.support.v4.app.INotifica
+tionSideChannel$Stub
+Warning: Library class androidx.core.graphics.drawable.IconCompat extends progra
+m class androidx.versionedparcelable.CustomVersionedParcelable
+Warning: Library class androidx.core.app.RemoteActionCompat implements program c
+lass androidx.versionedparcelable.VersionedParcelable
+Warning: Library class androidx.core.app.NotificationCompatSideChannelService$No
+tificationSideChannelStub extends program class android.support.v4.app.INotifica
+tionSideChannel$Stub
+[ 96% 9923/10321] //art/build/apex:art-check-release-apex-gen generate art-check
+--bitness=auto, trying to autodetect. This may be incorrect!
+  Detected 32-only
+[ 99% 10319/10321] Package target files: out/target/product/a5xelte/obj/PACKAGIN
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read VENDOR/build.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read VENDOR/etc/build.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read PRODUCT/build.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read PRODUCT/etc/build.pro
+p
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read PRODUCT_SERVICES/buil
+d.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read PRODUCT_SERVICES/etc/
+build.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read ODM/build.prop
+2020-12-29 02:55:37 - common.py - WARNING : Failed to read ODM/etc/build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read VENDOR/build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read VENDOR/etc/build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read PRODUCT/build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read PRODUCT/etc/build.pro
+p
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read PRODUCT_SERVICES/buil
+d.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read PRODUCT_SERVICES/etc/
+build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read ODM/build.prop
+2020-12-29 02:55:45 - common.py - WARNING : Failed to read ODM/etc/build.prop
+2020-12-29 02:55:45 - add_img_to_target_files - INFO    : 
+
+++++ boot  ++++
+
+
+2020-12-29 02:55:45 - common.py - INFO    : using prebuilt boot.img from BOOTABL
+E_IMAGES...
+2020-12-29 02:55:45 - add_img_to_target_files - INFO    : 
+
+++++ recovery  ++++
+
+
+2020-12-29 02:55:45 - common.py - INFO    : using prebuilt recovery.img from BOO
+TABLE_IMAGES...
+2020-12-29 02:55:45 - add_img_to_target_files - INFO    : 
+
+++++ recovery (two-step image)  ++++
+
+
+2020-12-29 02:55:45 - common.py - INFO    : building image from target_files REC
+OVERY...
+2020-12-29 02:55:45 - common.py - INFO    :   Running: "mkbootfs -f /home/andrey
+/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/lin
+eage_a5xelte-target_files-eng.andrey/META/recovery_filesystem_config.txt /home/a
+ndrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediate
+s/lineage_a5xelte-target_files-eng.andrey/RECOVERY/RAMDISK"
+2020-12-29 02:55:45 - common.py - INFO    :   Running: "minigzip"
+2020-12-29 02:55:45 - common.py - INFO    :   Running: "out/host/linux-x86/bin/m
+kbootimg --kernel /home/andrey/lineage/out/target/product/a5xelte/obj/PACKAGING/
+target_files_intermediates/lineage_a5xelte-target_files-eng.andrey/RECOVERY/kern
+el --cmdline buildvariant=userdebug --base 0x10000000 --pagesize 2048 --dt /home
+/andrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermedia
+tes/lineage_a5xelte-target_files-eng.andrey/RECOVERY/dt --kernel_offset 0x000080
+00 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --os_version 10 --os_pat
+ch_level 2020-12-05 --ramdisk /home/andrey/lineage/out/soong/.temp/tmpqKkhA4 --o
+utput /home/andrey/lineage/out/soong/.temp/tmpkNjQIf"
+2020-12-29 02:55:46 - common.py - INFO    : 
+2020-12-29 02:55:46 - add_img_to_target_files - INFO    : 
+
+++++ system  ++++
+
+
+2020-12-29 02:55:46 - add_img_to_target_files - INFO    : Building new recovery 
+patch
+2020-12-29 02:55:46 - common.py - INFO    :   Running: "imgdiff -b /home/andrey/
+lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/line
+age_a5xelte-target_files-eng.andrey/SYSTEM/etc/recovery-resource.dat /home/andre
+y/lineage/out/soong/.temp/tmpTdSL3m /home/andrey/lineage/out/soong/.temp/tmptrzj
+Lu /home/andrey/lineage/out/soong/.temp/tmpT_BSKg"
+2020-12-29 02:55:53 - common.py - INFO    : putting script in bin/install-recove
+ry.sh
+2020-12-29 02:55:54 - add_img_to_target_files - INFO    : creating system.img...
+2020-12-29 02:55:55 - common.py - INFO    :   Running: "mkuserimg_mke2fs -s /hom
+e/andrey/lineage/out/soong/.temp/tmpq2XHgL /home/andrey/lineage/out/target/produ
+ct/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_files
+-eng.andrey/IMAGES/system.img ext4 / 3145728000 -j 0 -T 1230768000 -C /home/andr
+ey/lineage/out/soong/.temp/merged_fs_configdYn9_d.txt -B /home/andrey/lineage/ou
+t/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelt
+e-target_files-eng.andrey/IMAGES/system.map -L / -M 0 -U 4729639d-b5f2-5cc1-a120
+-9ac5f788683c -S fd77d4fd-bb91-5ef5-9533-d5d806da85a3 --inode_size 256 /home/and
+rey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/
+lineage_a5xelte-target_files-eng.andrey/META/file_contexts.bin"
+2020-12-29 02:56:25 - common.py - INFO    : 02:55:58 mkuserimg_mke2fs.py INFO: E
+nv: {'E2FSPROGS_FAKE_TIME': '1230768000', 'MKE2FS_CONFIG': '/home/andrey/lineage
+/out/soong/.temp/tmp6XaUGq'}
+02:55:58 mkuserimg_mke2fs.py INFO: Running: mke2fs -O ^has_journal -L / -I 256 -
+M / -m 0 -U 4729639d-b5f2-5cc1-a120-9ac5f788683c -E android_sparse,hash_seed=fd7
+7d4fd-bb91-5ef5-9533-d5d806da85a3 -t ext4 -b 4096 /home/andrey/lineage/out/targe
+t/product/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-targe
+t_files-eng.andrey/IMAGES/system.img 768000
+02:55:59 mkuserimg_mke2fs.py INFO: Env: {'E2FSPROGS_FAKE_TIME': '1230768000'}
+02:55:59 mkuserimg_mke2fs.py INFO: Running: e2fsdroid -T 1230768000 -C /home/and
+rey/lineage/out/soong/.temp/merged_fs_configdYn9_d.txt -B /home/andrey/lineage/o
+ut/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xel
+te-target_files-eng.andrey/IMAGES/system.map -S /home/andrey/lineage/out/target/
+product/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_
+files-eng.andrey/META/file_contexts.bin -f /home/andrey/lineage/out/soong/.temp/
+tmpq2XHgL -a / /home/andrey/lineage/out/target/product/a5xelte/obj/PACKAGING/tar
+get_files_intermediates/lineage_a5xelte-target_files-eng.andrey/IMAGES/system.im
+g
+mke2fs 1.44.4 (18-Aug-2018)
+Creating filesystem with 768000 4k blocks and 192000 inodes
+Filesystem UUID: 4729639d-b5f2-5cc1-a120-9ac5f788683c
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Writing superblocks and filesystem accounting information: done 
+
+
+loaded 3814 fs_config entries
+Created filesystem with 3823/192000 inodes and 274339/768000 blocks
+2020-12-29 02:56:25 - common.py - INFO    :   Running: "simg2img /home/andrey/li
+neage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/lineag
+e_a5xelte-target_files-eng.andrey/IMAGES/system.img /home/andrey/lineage/out/tar
+get/product/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-tar
+get_files-eng.andrey/IMAGES/unsparse_system.img"
+2020-12-29 02:56:26 - common.py - INFO    : 
+2020-12-29 02:56:26 - common.py - INFO    :   Running: "e2fsck -f -n /home/andre
+y/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/li
+neage_a5xelte-target_files-eng.andrey/IMAGES/unsparse_system.img"
+2020-12-29 02:56:53 - common.py - INFO    : e2fsck 1.44.4 (18-Aug-2018)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/: 3823/192000 files (0.3% non-contiguous), 274339/768000 blocks
+2020-12-29 02:56:53 - add_img_to_target_files - INFO    : 
+
+++++ userdata  ++++
+
+
+2020-12-29 02:56:53 - add_img_to_target_files - INFO    : creating userdata.img.
+..
+2020-12-29 02:56:53 - common.py - INFO    :   Running: "mkf2fsuserimg.sh /home/a
+ndrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediate
+s/lineage_a5xelte-target_files-eng.andrey/IMAGES/userdata.img 13514047488 -f /ho
+me/andrey/lineage/out/soong/.temp/tmpieu2S4 -s /home/andrey/lineage/out/target/p
+roduct/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_f
+iles-eng.andrey/META/file_contexts.bin -t data -T 1230768000 -L data"
+2020-12-29 02:56:56 - common.py - INFO    : in mkf2fsuserimg.sh PATH=out/host/li
+nux-x86/bin:out/host/linux-x86/bin/:/home/andrey/lineage/prebuilts/build-tools/p
+ath/linux-x86:/home/andrey/lineage/out/.path
+make_f2fs -S 13514047488 -g android -l data /home/andrey/lineage/out/target/prod
+uct/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_file
+s-eng.andrey/IMAGES/userdata.img
+
+	F2FS-tools: mkfs.f2fs Ver: 1.12.0 (2018-11-12)
+
+Info: Disable heap-based policy
+Info: Debug level = 1
+Info: Label = data
+Info: Trim is disabled
+Info: Set conf for android
+	Info: No support kernel version!
+Info: Segments per section = 1
+Info: Sections per zone = 1
+Info: sector size = 512
+Info: total sectors = 26394624 (12888 MB)
+Info: zone aligned segment0 blkaddr: 512
+Info: add quota type = 0 => 4
+Info: add quota type = 1 => 5
+[f2fs_init_sit_area: 537] 	Filling sit area at offset 0x00600000
+[f2fs_init_nat_area: 571] 	Filling nat area at offset 0x00a00000
+[f2fs_write_root_inode:1147] 	Writing root inode (hot node), 6000 0 200 at off
+set 0x00024576
+[f2fs_write_default_quota:1223] 	Writing quota data, at offset 00006601, 
+00006602
+[f2fs_write_qf_inode:1319] 	Writing quota inode (hot node), 6000 0 200 at of
+fset 0x00024577
+[f2fs_write_default_quota:1223] 	Writing quota data, at offset 00006603, 
+00006604
+[f2fs_write_qf_inode:1319] 	Writing quota inode (hot node), 6000 0 200 at of
+fset 0x00024578
+[f2fs_update_nat_root:1373] 	Writing nat root, at offset 0x00000a00
+[f2fs_add_default_dentry_root:1569] 	Writing default dentry root, at offset 0
+x00006600
+Info: Overprovision ratio = 1.770%
+Info: Overprovision segments = 231 (GC reserved = 120)
+[f2fs_write_check_point_pack: 712] 	Writing main segments, cp at offset 0x00
+000200
+[f2fs_write_check_point_pack: 849] 	Writing Segment summary for HOT/WARM/COL
+D_DATA, at offset 0x00000201
+[f2fs_write_check_point_pack: 876] 	Writing Segment summary for HOT_NODE, at
+ offset 0x00000202
+[f2fs_write_check_point_pack: 888] 	Writing Segment summary for WARM_NODE, a
+t offset 0x00000203
+[f2fs_write_check_point_pack: 899] 	Writing Segment summary for COLD_NODE, a
+t offset 0x00000204
+[f2fs_write_check_point_pack: 907] 	Writing cp page2, at offset 0x00000205
+[f2fs_write_check_point_pack: 927] 	Writing NAT bits pages, at offset 0x0000
+03ff
+[f2fs_write_check_point_pack: 948] 	Writing cp page 1 of checkpoint pack 2, 
+at offset 0x00000400
+[f2fs_write_check_point_pack: 967] 	Writing cp page 2 of checkpoint pack 2, 
+at offset 0x00000405
+[f2fs_write_super_block:1000] 	Writing super block, at offset 0x00000000
+Info: format successful
+sload_f2fs -S -f /home/andrey/lineage/out/soong/.temp/tmpieu2S4 -s /home/andrey/
+lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/line
+age_a5xelte-target_files-eng.andrey/META/file_contexts.bin -t /data -T 123076800
+0 /home/andrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_int
+ermediates/lineage_a5xelte-target_files-eng.andrey/IMAGES/userdata.img
+	Info: No support kernel version!
+Info: Segments per section = 1
+Info: Sections per zone = 1
+Info: sector size = 512
+Info: total sectors = 26394624 (12888 MB)
+Info: MKFS version
+  "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: FSCK version
+  from "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+    to "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: superblock features = 481 :  encrypt verity quota_ino
+Info: superblock encrypt level = 0, salt = 00000000000000000000000000000000
+Info: total FS sectors = 26394624 (12888 MB)
+Info: CKPT version = 54fef151
+Info: Write valid nat_bits in checkpoint
+Info: Write valid nat_bits in checkpoint
+Info: MKFS version
+  "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: FSCK version
+  from "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+    to "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: superblock features = 481 :  encrypt verity quota_ino
+Info: superblock encrypt level = 0, salt = 00000000000000000000000000000000
+Info: total FS sectors = 26394624 (12888 MB)
+Info: CKPT version = 54fef151
+Info: Checked valid nat_bits in checkpoint
+Info: checkpoint state = 81 :  nat_bits unmount
+[fsck_chk_quota_files:1788] Fixing Quota file ([  0] ino [0x4])
+[fsck_chk_quota_files:1788] Fixing Quota file ([  1] ino [0x5])
+
+[FSCK] Unreachable nat entries                        [Ok..] [0x0]
+[FSCK] SIT valid block bitmap checking                [Ok..]
+[FSCK] Hard link checking for regular file            [Ok..] [0x0]
+[FSCK] valid_block_count matching with CP             [Ok..] [0x9]
+[FSCK] valid_node_count matcing with CP (de lookup)   [Ok..] [0x4]
+[FSCK] valid_node_count matcing with CP (nat lookup)  [Ok..] [0x4]
+[FSCK] valid_inode_count matched with CP              [Ok..] [0x3]
+[FSCK] free segment_count matched with CP             [Ok..] [0x18f4]
+[FSCK] next block offset is free                      [Ok..]
+[FSCK] fixing SIT types
+[FSCK] other corrupted bugs                           [Fail]
+Info: Write valid nat_bits in checkpoint
+
+Done.
+2020-12-29 02:56:56 - add_img_to_target_files - INFO    : 
+
+++++ cache  ++++
+
+
+2020-12-29 02:56:56 - add_img_to_target_files - INFO    : creating cache.img...
+2020-12-29 02:56:56 - common.py - INFO    :   Running: "mkf2fsuserimg.sh /home/a
+ndrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediate
+s/lineage_a5xelte-target_files-eng.andrey/IMAGES/cache.img 104857600 -f /home/an
+drey/lineage/out/soong/.temp/tmpW5KjS6 -s /home/andrey/lineage/out/target/produc
+t/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_files-
+eng.andrey/META/file_contexts.bin -t cache -T 1230768000 -L cache"
+2020-12-29 02:56:57 - common.py - INFO    : in mkf2fsuserimg.sh PATH=out/host/li
+nux-x86/bin:out/host/linux-x86/bin/:/home/andrey/lineage/prebuilts/build-tools/p
+ath/linux-x86:/home/andrey/lineage/out/.path
+make_f2fs -S 104857600 -g android -l cache /home/andrey/lineage/out/target/produ
+ct/a5xelte/obj/PACKAGING/target_files_intermediates/lineage_a5xelte-target_files
+-eng.andrey/IMAGES/cache.img
+
+	F2FS-tools: mkfs.f2fs Ver: 1.12.0 (2018-11-12)
+
+Info: Disable heap-based policy
+Info: Debug level = 1
+Info: Label = cache
+Info: Trim is disabled
+Info: Set conf for android
+	Info: No support kernel version!
+Info: Segments per section = 1
+Info: Sections per zone = 1
+Info: sector size = 512
+Info: total sectors = 204800 (100 MB)
+Info: zone aligned segment0 blkaddr: 512
+Info: add quota type = 0 => 4
+Info: add quota type = 1 => 5
+[f2fs_init_sit_area: 537] 	Filling sit area at offset 0x00600000
+[f2fs_init_nat_area: 571] 	Filling nat area at offset 0x00a00000
+[f2fs_write_root_inode:1147] 	Writing root inode (hot node), 1000 0 200 at off
+set 0x00004096
+[f2fs_write_default_quota:1223] 	Writing quota data, at offset 00001601, 
+00001602
+[f2fs_write_qf_inode:1319] 	Writing quota inode (hot node), 1000 0 200 at of
+fset 0x00004097
+[f2fs_write_default_quota:1223] 	Writing quota data, at offset 00001603, 
+00001604
+[f2fs_write_qf_inode:1319] 	Writing quota inode (hot node), 1000 0 200 at of
+fset 0x00004098
+[f2fs_update_nat_root:1373] 	Writing nat root, at offset 0x00000a00
+[f2fs_add_default_dentry_root:1569] 	Writing default dentry root, at offset 0
+x00001600
+Info: Overprovision ratio = 25.000%
+Info: Overprovision segments = 22 (GC reserved = 16)
+[f2fs_write_check_point_pack: 712] 	Writing main segments, cp at offset 0x00
+000200
+[f2fs_write_check_point_pack: 849] 	Writing Segment summary for HOT/WARM/COL
+D_DATA, at offset 0x00000201
+[f2fs_write_check_point_pack: 876] 	Writing Segment summary for HOT_NODE, at
+ offset 0x00000202
+[f2fs_write_check_point_pack: 888] 	Writing Segment summary for WARM_NODE, a
+t offset 0x00000203
+[f2fs_write_check_point_pack: 899] 	Writing Segment summary for COLD_NODE, a
+t offset 0x00000204
+[f2fs_write_check_point_pack: 907] 	Writing cp page2, at offset 0x00000205
+[f2fs_write_check_point_pack: 927] 	Writing NAT bits pages, at offset 0x0000
+03ff
+[f2fs_write_check_point_pack: 948] 	Writing cp page 1 of checkpoint pack 2, 
+at offset 0x00000400
+[f2fs_write_check_point_pack: 967] 	Writing cp page 2 of checkpoint pack 2, 
+at offset 0x00000405
+[f2fs_write_super_block:1000] 	Writing super block, at offset 0x00000000
+Info: format successful
+sload_f2fs -S -f /home/andrey/lineage/out/soong/.temp/tmpW5KjS6 -s /home/andrey/
+lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_intermediates/line
+age_a5xelte-target_files-eng.andrey/META/file_contexts.bin -t /cache -T 12307680
+00 /home/andrey/lineage/out/target/product/a5xelte/obj/PACKAGING/target_files_in
+termediates/lineage_a5xelte-target_files-eng.andrey/IMAGES/cache.img
+	Info: No support kernel version!
+Info: Segments per section = 1
+Info: Sections per zone = 1
+Info: sector size = 512
+Info: total sectors = 204800 (100 MB)
+Info: MKFS version
+  "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: FSCK version
+  from "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+    to "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: superblock features = 481 :  encrypt verity quota_ino
+Info: superblock encrypt level = 0, salt = 00000000000000000000000000000000
+Info: total FS sectors = 204800 (100 MB)
+Info: CKPT version = 314ecd05
+Info: Write valid nat_bits in checkpoint
+Info: Write valid nat_bits in checkpoint
+Info: MKFS version
+  "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: FSCK version
+  from "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+    to "5.4.0-58-generic #64-Ubuntu SMP Wed Dec 9 08:16:25 UTC 2020"
+Info: superblock features = 481 :  encrypt verity quota_ino
+Info: superblock encrypt level = 0, salt = 00000000000000000000000000000000
+Info: total FS sectors = 204800 (100 MB)
+Info: CKPT version = 314ecd05
+Info: Checked valid nat_bits in checkpoint
+Info: checkpoint state = 81 :  nat_bits unmount
+[fsck_chk_quota_files:1788] Fixing Quota file ([  0] ino [0x4])
+[fsck_chk_quota_files:1788] Fixing Quota file ([  1] ino [0x5])
+
+[FSCK] Unreachable nat entries                        [Ok..] [0x0]
+[FSCK] SIT valid block bitmap checking                [Ok..]
+[FSCK] Hard link checking for regular file            [Ok..] [0x0]
+[FSCK] valid_block_count matching with CP             [Ok..] [0x9]
+[FSCK] valid_node_count matcing with CP (de lookup)   [Ok..] [0x4]
+[FSCK] valid_node_count matcing with CP (nat lookup)  [Ok..] [0x4]
+[FSCK] valid_inode_count matched with CP              [Ok..] [0x3]
+[FSCK] free segment_count matched with CP             [Ok..] [0x22]
+[FSCK] next block offset is free                      [Ok..]
+[FSCK] fixing SIT types
+[FSCK] other corrupted bugs                           [Fail]
+Info: Write valid nat_bits in checkpoint
+
+Done.
+2020-12-29 02:56:57 - add_img_to_target_files - INFO    : 
+
+++++ radio  ++++
+
+
+2020-12-29 02:56:57 - add_img_to_target_files - INFO    : done.
+[ 99% 10320/10321] Package OTA: out/target/product/a5xelte/lineage_a5xelte-ota-e
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read VENDOR/build.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read VENDOR/etc/build.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read PRODUCT/build.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read PRODUCT/etc/build.pro
+p
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read PRODUCT_SERVICES/buil
+d.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read PRODUCT_SERVICES/etc/
+build.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read ODM/build.prop
+2020-12-29 02:57:16 - common.py - WARNING : Failed to read ODM/etc/build.prop
+2020-12-29 02:57:16 - ota_from_target_files - INFO    : --- target info ---
+2020-12-29 02:57:16 - common.py - INFO    : blockimgdiff_versions     = (str) 3,
+4
+2020-12-29 02:57:16 - common.py - INFO    : blocksize                 = (int) 40
+96
+2020-12-29 02:57:16 - common.py - INFO    : boot_size                 = (int) 29
+360128
+2020-12-29 02:57:16 - common.py - INFO    : build.prop                = (dict) {
+'ro.nfc.fw_dl_on_boot': 'false', 'ro.product.cpu.abilist': 'armeabi-v7a,armeabi'
+, 'ro.build.product': 'a5xelte', 'ro.build.id': 'QQ3A.200805.001', 'ro.product.c
+pu.abilist32': 'armeabi-v7a,armeabi', 'net.tethering.noprovisioning': 'true', 'r
+o.treble.enabled': 'false', 'ro.frp.pst': '/dev/block/platform/13540000.dwmmc0/b
+y-name/PERSISTENT', 'af.fast_track_multiplier': '1', 'debug.stagefright.ccodec':
+ '0', 'dalvik.vm.heapmaxfree': '8m', 'ro.system.build.version.sdk': '29', 'ro.bu
+ild.description': 'lineage_a5xelte-userdebug 10 QQ3A.200805.001 eng.andrey.20201
+228.221400 test-keys', 'ro.system.build.tags': 'test-keys', 'dalvik.vm.heapstart
+size': '8m', 'wifi.interface': 'wlan0', 'ro.lineage.display.version': '17.1-2020
+1228-UNOFFICIAL-a5xelte', 'wifi.direct.interface': 'p2p-dev-wlan0', 'ro.system.b
+uild.fingerprint': 'samsung/lineage_a5xelte/a5xelte:10/QQ3A.200805.001/andrey122
+82212:userdebug/test-keys', 'ro.ril.telephony.mqanelements': '6', 'ro.product.sy
+stem.model': 'SM-A510F', 'ro.system.build.type': 'userdebug', 'dalvik.vm.heaptar
+getutilization': '0.75', 'ro.build.host': 'andrey-System-Product-Name', 'ro.buil
+d.version.security_patch': '2020-12-05', 'telephony.lteOnCdmaDevice': '0', 'ro.p
+roduct.locale': 'en-US', 'ro.smps.enable': 'true', 'ro.carrier': 'unknown', 'per
+sist.debug.dalvik.vm.core_platform_api_policy': 'just-warn', 'dalvik.vm.heapminf
+ree': '2m', 'ro.system.build.id': 'QQ3A.200805.001', 'ro.ril.hsxpa': '1', 'ro.li
+neage.build.vendor_security_patch': '2019-07-01', 'ro.telephony.get_imsi_from_si
+m': 'true', 'ro.build.version.min_supported_target_sdk': '23', 'persist.sys.usb.
+config': 'mtp', 'ro.product.cpu.abilist64': '', 'ro.build.flavor': 'lineage_a5xe
+lte-userdebug', 'rild.libargs': '-d', 'ro.lineagelegal.url': 'https://lineageos.
+org/legal', 'ro.build.version.release': '10', 'ro.build.version.codename': 'REL'
+, 'net.bt.name': 'Android', 'ro.product.system.name': 'lineage_a5xelte', 'persis
+t.data.netmgrd.qos.enable': 'false', 'ro.opengles.version': '196610', 'ro.build.
+display.id': 'lineage_a5xelte-userdebug 10 QQ3A.200805.001 eng.andrey.20201228.2
+21400 test-keys', 'dalvik.vm.heapsize': '512m', 'ro.product.system.brand': 'sams
+ung', 'ro.build.version.preview_sdk': '0', 'audio_hal.force_voice_config': 'wide
+', 'ro.build.date': 'Mon Dec 28 22:12:22 MSK 2020', 'ro.system.build.version.inc
+remental': 'eng.andrey.20201228.221400', 'ro.use_data_netmgrd': 'false', 'persis
+t.radio.sib16_support': '0', 'ro.build.type': 'userdebug', 'ro.build.date.utc': 
+'1609182742', 'ro.lineage.releasetype': 'UNOFFICIAL', 'keyguard.no_require_sim':
+ 'true', 'ro.build.version.all_codenames': 'REL', 'ro.product.system.device': 'a
+5xelte', 'dalvik.vm.lockprof.threshold': '500', 'ro.product.cpu.abi': 'armeabi-v
+7a', 'ro.ril.force_eri_from_xml': 'true', 'debug.sf.latch_unsignaled': '1', 'ro.
+build.version.base_os': '', 'rild.libpath': '/system/lib/libsec-ril.so', 'ro.ril
+.gprsclass': '10', 'ro.wifi.channels': '', 'net.tcp.default_init_rwnd': '60', 'r
+o.product.system.manufacturer': 'samsung', 'ro.modversion': '17.1-20201228-UNOFF
+ICIAL-a5xelte', 'ro.telephony.default_network': '9', 'ro.build.version.increment
+al': 'eng.andrey.20201228.221400', 'ro.build.tags': 'test-keys', 'ro.system.buil
+d.date.utc': '1609182742', 'ro.sf.lcd_density': '480', 'ro.build.version.sdk': '
+29', 'ro.lineage.build.version': '17.1', 'ro.lineage.build.version.plat.sdk': '9
+', 'ro.lineage.device': 'a5xelte', 'ro.product.cpu.abi2': 'armeabi', 'ro.build.u
+ser': 'andrey', 'ro.system.build.date': 'Mon Dec 28 22:12:22 MSK 2020', 'ro.syst
+em.build.version.release': '10', 'ro.lineage.build.version.plat.rev': '0', 'dalv
+ik.vm.heapgrowthlimit': '128m', 'ro.lineage.version': '17.1-20201228-UNOFFICIAL-
+a5xelte', 'ro.build.version.preview_sdk_fingerprint': 'REL'}
+2020-12-29 02:57:16 - common.py - INFO    : cache_fs_type             = (str) ex
+t4
+2020-12-29 02:57:16 - common.py - INFO    : cache_size                = (int) 10
+4857600
+2020-12-29 02:57:16 - common.py - INFO    : default_system_dev_certificate = (st
+r) build/make/target/product/security/testkey
+2020-12-29 02:57:16 - common.py - INFO    : ext_mkuserimg             = (str) mk
+userimg_mke2fs
+2020-12-29 02:57:16 - common.py - INFO    : extfs_sparse_flag         = (str) -s
+2020-12-29 02:57:16 - common.py - INFO    : extra_recovery_keys       = (str) ve
+ndor/lineage/build/target/product/security/lineage
+2020-12-29 02:57:16 - common.py - INFO    : fs_type                   = (str) ex
+t4
+2020-12-29 02:57:16 - common.py - INFO    : fstab                     = (dict) {
+'/cpefs': <common.Partition object at 0x7f531d7668d0>, '/cache': <common.Partiti
+on object at 0x7f531d766890>, '/boot': <common.Partition object at 0x7f531d7667d
+0>, '/system': <common.Partition object at 0x7f531d766790>, '/efs': <common.Part
+ition object at 0x7f531d766910>, '/recovery': <common.Partition object at 0x7f53
+1d766850>, '/data': <common.Partition object at 0x7f531d766990>, '/misc': <commo
+n.Partition object at 0x7f531d766810>}
+2020-12-29 02:57:16 - common.py - INFO    : fstab_version             = (int) 2
+2020-12-29 02:57:16 - common.py - INFO    : lpmake                    = (str) lp
+make
+2020-12-29 02:57:16 - common.py - INFO    : mkbootimg_args            = (str) --
+kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+2020-12-29 02:57:16 - common.py - INFO    : mkbootimg_version_args    = (str) --
+os_version 10 --os_patch_level 2020-12-05
+2020-12-29 02:57:16 - common.py - INFO    : multistage_support        = (str) 1
+2020-12-29 02:57:16 - common.py - INFO    : odm.build.prop            = (dict) {
+}
+2020-12-29 02:57:16 - common.py - INFO    : ota_override_device       = (str) a5
+xelte,a5xeltexx,a5xelteub,a5xeltedo
+2020-12-29 02:57:16 - common.py - INFO    : product.build.prop        = (dict) {
+}
+2020-12-29 02:57:16 - common.py - INFO    : product_services.build.prop = (dict)
+ {}
+2020-12-29 02:57:16 - common.py - INFO    : recovery_api_version      = (int) 3
+2020-12-29 02:57:16 - common.py - INFO    : recovery_mount_options    = (str) ex
+t4=max_batch_time=0,commit=1,data=ordered,barrier=1,errors=panic,nodelalloc
+2020-12-29 02:57:16 - common.py - INFO    : recovery_size             = (int) 35
+651584
+2020-12-29 02:57:16 - common.py - INFO    : root_dir                  = (str) ou
+t/target/product/a5xelte/root
+2020-12-29 02:57:16 - common.py - INFO    : selinux_fc                = (str) ou
+t/target/product/a5xelte/obj/ETC/file_contexts.bin_intermediates/file_contexts.b
+in
+2020-12-29 02:57:16 - common.py - INFO    : squashfs_sparse_flag      = (str) -s
+2020-12-29 02:57:16 - common.py - INFO    : super_metadata_device     = (str) 
+2020-12-29 02:57:16 - common.py - INFO    : system.build.prop         = (dict) {
+'ro.nfc.fw_dl_on_boot': 'false', 'ro.product.cpu.abilist': 'armeabi-v7a,armeabi'
+, 'ro.build.product': 'a5xelte', 'ro.build.id': 'QQ3A.200805.001', 'ro.product.c
+pu.abilist32': 'armeabi-v7a,armeabi', 'net.tethering.noprovisioning': 'true', 'r
+o.treble.enabled': 'false', 'ro.frp.pst': '/dev/block/platform/13540000.dwmmc0/b
+y-name/PERSISTENT', 'af.fast_track_multiplier': '1', 'debug.stagefright.ccodec':
+ '0', 'dalvik.vm.heapmaxfree': '8m', 'ro.system.build.version.sdk': '29', 'ro.bu
+ild.description': 'lineage_a5xelte-userdebug 10 QQ3A.200805.001 eng.andrey.20201
+228.221400 test-keys', 'ro.system.build.tags': 'test-keys', 'dalvik.vm.heapstart
+size': '8m', 'wifi.interface': 'wlan0', 'ro.lineage.display.version': '17.1-2020
+1228-UNOFFICIAL-a5xelte', 'wifi.direct.interface': 'p2p-dev-wlan0', 'ro.system.b
+uild.fingerprint': 'samsung/lineage_a5xelte/a5xelte:10/QQ3A.200805.001/andrey122
+82212:userdebug/test-keys', 'ro.ril.telephony.mqanelements': '6', 'ro.product.sy
+stem.model': 'SM-A510F', 'ro.system.build.type': 'userdebug', 'dalvik.vm.heaptar
+getutilization': '0.75', 'ro.build.host': 'andrey-System-Product-Name', 'ro.buil
+d.version.security_patch': '2020-12-05', 'telephony.lteOnCdmaDevice': '0', 'ro.p
+roduct.locale': 'en-US', 'ro.smps.enable': 'true', 'ro.carrier': 'unknown', 'per
+sist.debug.dalvik.vm.core_platform_api_policy': 'just-warn', 'dalvik.vm.heapminf
+ree': '2m', 'ro.system.build.id': 'QQ3A.200805.001', 'ro.ril.hsxpa': '1', 'ro.li
+neage.build.vendor_security_patch': '2019-07-01', 'ro.telephony.get_imsi_from_si
+m': 'true', 'ro.build.version.min_supported_target_sdk': '23', 'persist.sys.usb.
+config': 'mtp', 'ro.product.cpu.abilist64': '', 'ro.build.flavor': 'lineage_a5xe
+lte-userdebug', 'rild.libargs': '-d', 'ro.lineagelegal.url': 'https://lineageos.
+org/legal', 'ro.build.version.release': '10', 'ro.build.version.codename': 'REL'
+, 'net.bt.name': 'Android', 'ro.product.system.name': 'lineage_a5xelte', 'persis
+t.data.netmgrd.qos.enable': 'false', 'ro.opengles.version': '196610', 'ro.build.
+display.id': 'lineage_a5xelte-userdebug 10 QQ3A.200805.001 eng.andrey.20201228.2
+21400 test-keys', 'dalvik.vm.heapsize': '512m', 'ro.product.system.brand': 'sams
+ung', 'ro.build.version.preview_sdk': '0', 'audio_hal.force_voice_config': 'wide
+', 'ro.build.date': 'Mon Dec 28 22:12:22 MSK 2020', 'ro.system.build.version.inc
+remental': 'eng.andrey.20201228.221400', 'ro.use_data_netmgrd': 'false', 'persis
+t.radio.sib16_support': '0', 'ro.build.type': 'userdebug', 'ro.build.date.utc': 
+'1609182742', 'ro.lineage.releasetype': 'UNOFFICIAL', 'keyguard.no_require_sim':
+ 'true', 'ro.build.version.all_codenames': 'REL', 'ro.product.system.device': 'a
+5xelte', 'dalvik.vm.lockprof.threshold': '500', 'ro.product.cpu.abi': 'armeabi-v
+7a', 'ro.ril.force_eri_from_xml': 'true', 'debug.sf.latch_unsignaled': '1', 'ro.
+build.version.base_os': '', 'rild.libpath': '/system/lib/libsec-ril.so', 'ro.ril
+.gprsclass': '10', 'ro.wifi.channels': '', 'net.tcp.default_init_rwnd': '60', 'r
+o.product.system.manufacturer': 'samsung', 'ro.modversion': '17.1-20201228-UNOFF
+ICIAL-a5xelte', 'ro.telephony.default_network': '9', 'ro.build.version.increment
+al': 'eng.andrey.20201228.221400', 'ro.build.tags': 'test-keys', 'ro.system.buil
+d.date.utc': '1609182742', 'ro.sf.lcd_density': '480', 'ro.build.version.sdk': '
+29', 'ro.lineage.build.version': '17.1', 'ro.lineage.build.version.plat.sdk': '9
+', 'ro.lineage.device': 'a5xelte', 'ro.product.cpu.abi2': 'armeabi', 'ro.build.u
+ser': 'andrey', 'ro.system.build.date': 'Mon Dec 28 22:12:22 MSK 2020', 'ro.syst
+em.build.version.release': '10', 'ro.lineage.build.version.plat.rev': '0', 'dalv
+ik.vm.heapgrowthlimit': '128m', 'ro.lineage.version': '17.1-20201228-UNOFFICIAL-
+a5xelte', 'ro.build.version.preview_sdk_fingerprint': 'REL'}
+2020-12-29 02:57:16 - common.py - INFO    : system_size               = (int) 31
+45728000
+2020-12-29 02:57:16 - common.py - INFO    : tool_extensions           = (str) de
+vice/samsung/a5xelte/../common
+2020-12-29 02:57:16 - common.py - INFO    : use_set_metadata          = (str) 1
+2020-12-29 02:57:16 - common.py - INFO    : userdata_size             = (int) 13
+514047488
+2020-12-29 02:57:16 - common.py - INFO    : vendor.build.prop         = (dict) {
+}
+2020-12-29 02:57:16 - common.py - INFO    :   Running: "openssl pkcs8 -in build/
+make/target/product/security/testkey.pk8 -inform DER -nocrypt"
+2020-12-29 02:57:16 - common.py - INFO    : unable to load device-specific modul
+e; assuming none
+2020-12-29 02:57:16 - sparse_img.py - INFO    : Total of 768000 4096-byte output
+ blocks in 32 input chunks.
+2020-12-29 02:57:19 - blockimgdiff.py - INFO    : Finding transfers...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Generating digraph...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Finding vertex sequence...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Reversing backward edges...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    :   0/0 dependencies (0.00%) wer
+e violated; 0 source blocks stashed.
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Improving vertex order...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Revising stash size...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    :   Total 0 blocks (0 bytes) are
+ packed as new blocks due to insufficient cache size. Maximum blocks stashed sim
+ultaneously: 0
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    : Revising stash size...
+2020-12-29 02:57:22 - blockimgdiff.py - INFO    :   Total 0 blocks (0 bytes) are
+ packed as new blocks due to insufficient cache size. Maximum blocks stashed sim
+ultaneously: 0
+2020-12-29 02:57:25 - blockimgdiff.py - INFO    : Reticulating splines...
+2020-12-29 02:57:26 - blockimgdiff.py - INFO    : 1071538176 1071538176 (100.00%
+)     new __DATA 0-429 691-32769 32957 33459-65536 66038-98305 98493 98995-13107
+2 131574-163841 164029 164531-196608 197110-229377 229565 230067-262144 262646-2
+66619 294912-294913 753664
+2020-12-29 02:57:26 - blockimgdiff.py - INFO    : max stashed blocks: 0  (0 byte
+s), limit: 83886080 bytes (0.00%)
+
+2020-12-29 02:57:26 - blockimgdiff.py - INFO    :   Imgdiff Stats Report  
+2020-12-29 02:57:26 - blockimgdiff.py - INFO    : ========================
+
+2020-12-29 02:57:26 - common.py - INFO    : using prebuilt recovery.img from BOO
+TABLE_IMAGES...
+2020-12-29 02:57:26 - common.py - INFO    :   Running: "brotli --quality=6 --out
+put=/home/andrey/lineage/out/soong/.temp/tmpgQ4TE6/system.new.dat.br /home/andre
+y/lineage/out/soong/.temp/tmpgQ4TE6/system.new.dat"
+2020-12-29 02:59:06 - common.py - INFO    : 
+2020-12-29 02:59:07 - common.py - INFO    : using prebuilt boot.img from BOOTABL
+E_IMAGES...
+2020-12-29 02:59:13 - common.py - INFO    :   Running: "java -Xmx2048m -Djava.li
+brary.path=out/host/linux-x86/lib64 -jar out/host/linux-x86/framework/signapk.ja
+r -w build/make/target/product/security/testkey.x509.pem build/make/target/produ
+ct/security/testkey.pk8 /home/andrey/lineage/out/soong/.temp/tmpOkvBKn.zip /home
+/andrey/lineage/out/soong/.temp/tmplX8j7R.zip"
+2020-12-29 02:59:20 - common.py - INFO    :   Running: "zip -d /home/andrey/line
+age/out/soong/.temp/tmplX8j7R.zip META-INF/com/android/metadata"
+2020-12-29 02:59:21 - common.py - INFO    : deleting: META-INF/com/android/metad
+ata
+2020-12-29 02:59:21 - common.py - INFO    :   Running: "java -Xmx2048m -Djava.li
+brary.path=out/host/linux-x86/lib64 -jar out/host/linux-x86/framework/signapk.ja
+r -w build/make/target/product/security/testkey.x509.pem build/make/target/produ
+ct/security/testkey.pk8 /home/andrey/lineage/out/soong/.temp/tmplX8j7R.zip out/t
+arget/product/a5xelte/lineage_a5xelte-ota-eng.andrey.zip"
+2020-12-29 02:59:28 - ota_from_target_files - INFO    : done.
+Compressing system.new.dat with brotli
+[100% 10321/10321] build bacon
+Package Complete: out/target/product/a5xelte/lineage-17.1-20201228-UNOFFICIAL-a5
+xelte.zip
+
+#### build completed successfully (49:23 (mm:ss)) ####
+
+andrey@andrey-System-Product-Name:~/lineage$ 
