@@ -27,7 +27,11 @@
 * Выбрать прошивку с открытым исходным кодом и собрать ее для Samsung Galaxy A5 (2016)
 * Модернизировать получившуюся прошивку
 
-### Теоретическая часть 
+### Теоретическая часть
+
+[Что такое Android] (https://github.com/Dandelion4ik/course_work/blob/main/theory/android.md)
+[Компоненты Android] (https://github.com/Dandelion4ik/course_work/blob/main/theory/android_componets.md)
+[Что такое repo] (https://github.com/Dandelion4ik/course_work/blob/main/theory/repo.md)
 
 ### Описание работы 
 
