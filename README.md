@@ -54,10 +54,10 @@
 
 ### Полезные ссылки
 
-* [Android Developers] (https://developer.android.com)
-* [4PDA] (https://4pda.ru/forum/index.php?showtopic=209610)
-* [XDA] (https://www.xda-developers.com/)
-* [Medium] (https://medium.com/android-core)
+* [Android Developers](https://developer.android.com)
+* [4PDA](https://4pda.ru/forum/index.php?showtopic=209610)
+* [XDA](https://www.xda-developers.com/)
+* [Medium](https://medium.com/android-core)
 
 ## TODO-лист
 
