@@ -29,9 +29,9 @@
 
 ### Теоретическая часть
 
-[Что такое Android] (https://github.com/Dandelion4ik/course_work/blob/main/theory/android.md)
-[Компоненты Android] (https://github.com/Dandelion4ik/course_work/blob/main/theory/android_componets.md)
-[Что такое repo] (https://github.com/Dandelion4ik/course_work/blob/main/theory/repo.md)
+1. [Что такое Android](https://github.com/Dandelion4ik/course_work/blob/main/theory/android.md)
+2. [Компоненты Android](https://github.com/Dandelion4ik/course_work/blob/main/theory/android_componets.md)
+3. [Что такое repo](https://github.com/Dandelion4ik/course_work/blob/main/theory/repo.md)
 
 ### Описание работы 
 
